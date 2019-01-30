@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoConcesionario" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fS-PP-zb4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mO8-C3-Rfq">
+                                <rect key="frame" x="16" y="40" width="343" height="163"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-m7-fxz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8O-ck-oeb">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Sg-YaQ">
+                                        <rect key="frame" x="0.0" y="66.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS9-Ob-F5g">
+                                        <rect key="frame" x="0.0" y="95" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-1V-gY4">
+                                        <rect key="frame" x="126" y="133" width="91" height="30"/>
+                                        <state key="normal" title="Iniciar Sesión"/>
+                                        <connections>
+                                            <action selector="contrasena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0K-Kg-83t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="W8O-ck-oeb" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="1WQ-iR-IAE"/>
+                                    <constraint firstAttribute="trailing" secondItem="BtF-m7-fxz" secondAttribute="trailing" id="2TU-AJ-WAh"/>
+                                    <constraint firstAttribute="trailing" secondItem="pId-Sg-YaQ" secondAttribute="trailing" id="BJZ-bK-pWH"/>
+                                    <constraint firstItem="BtF-m7-fxz" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="CCY-gm-fVN"/>
+                                    <constraint firstItem="pId-Sg-YaQ" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="FJy-1E-9RS"/>
+                                    <constraint firstAttribute="trailing" secondItem="W8O-ck-oeb" secondAttribute="trailing" id="dzj-if-M0a"/>
+                                    <constraint firstAttribute="trailing" secondItem="XS9-Ob-F5g" secondAttribute="trailing" id="kOG-lg-V5k"/>
+                                    <constraint firstItem="XS9-Ob-F5g" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="upA-13-p1M"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AKO-ul-ZMO" firstAttribute="trailing" secondItem="mO8-C3-Rfq" secondAttribute="trailing" constant="16" id="M7j-MZ-TUR"/>
+                            <constraint firstItem="mO8-C3-Rfq" firstAttribute="leading" secondItem="6fS-PP-zb4" secondAttribute="leading" constant="16" id="eEH-0J-bbk"/>
+                            <constraint firstItem="mO8-C3-Rfq" firstAttribute="top" secondItem="6fS-PP-zb4" secondAttribute="top" constant="40" id="jQJ-HG-s8J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AKO-ul-ZMO"/>
+                    </view>
+                    <connections>
+                        <outlet property="campoContrasena" destination="XS9-Ob-F5g" id="r9Z-CL-d3M"/>
+                        <outlet property="campoUsuario" destination="W8O-ck-oeb" id="oqM-Dj-3bk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
