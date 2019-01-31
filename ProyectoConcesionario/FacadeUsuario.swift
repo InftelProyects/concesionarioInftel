@@ -47,12 +47,12 @@ class FacadeUsuario{
     
     func CreateUser() {
         
-        let usu = Usuario(nombre: "Francisca", apellidos: "Estancias", usuario: "paquitaSalas", constrasena: "TRES60", rol: "user")
+        let usu = Usuario(nombre: "Paco", apellidos: "Uceda", usuario: "Puce", constrasena: "1234567", rol: "user")
         
         let uploadData = try! JSONEncoder().encode(usu)
         let json = String(data: uploadData, encoding: String.Encoding.utf8)!
         print(json)
-        let url = URL(string: "http://192.168.245.68:8080/WebServerConcesionario/recursos/usuario")!
+        let url = URL(string: "http://192.168.224.152:8080/WebServerConcesionario/recursos/usuario")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -75,8 +75,6 @@ class FacadeUsuario{
             }
         }
         task.resume()
-        
-        
     }
 }
 

@@ -18,6 +18,10 @@ class ViewController: UIViewController  {
     @IBOutlet weak var campoUsuario: UITextField!
     @IBOutlet weak var campoContrasena: UITextField!
     @IBOutlet weak var labelNameUser: UILabel!
+    @IBOutlet weak var VistaImage: UIImageView!
+    
+    
+    
     
     @IBAction func botonRegistro(_ sender: Any) {
         facadeUsuario.CreateUser()
@@ -37,6 +41,15 @@ class ViewController: UIViewController  {
             facadeImagen.encodeData()
             facadeImagen.UploadImage()
         
+    }
+    
+    @IBAction func SacarImgen(_ sender: Any) {
+        //facadeImagen.encodeData()
+        facadeImagen.DownloadImage(bastidor: "3101"){ img in
+            DispatchQueue.main.async {
+                self.VistaImage.image = img
+            }
+        }
     }
     
     

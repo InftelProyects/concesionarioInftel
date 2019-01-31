@@ -13,22 +13,26 @@ class Imagen : Encodable{
     
     let nombre : String
     let ruta : String
-    let bastidor_vehiculo : String
-    let img : Data?
+    let bastidor : String
+    let img : Data
+    let id : Int?
     
     init(_ dictionary: [String: Any]) {
         self.nombre = dictionary["nombre"] as? String ?? ""
         self.ruta = dictionary["ruta"] as? String ?? ""
-        self.bastidor_vehiculo = dictionary["bastidorVehiculo"] as? String ?? ""
-        self.img = dictionary["img"] as? Data!
+        self.bastidor = dictionary["bastidor"] as? String ?? ""
+        self.img = dictionary["img"] as! Data
+        self.id = dictionary["id"] as? Int ?? 0
+        //self.idusuario = dictionary["idusuario"] as? Int ?? 0
     }
     
-    init(nombre : String, ruta :String, bastidor_vehiculo : String, img : Data?) {
+    init(nombre : String, ruta :String, bastidor : String, img : Data, id : Int?) {
         
         self.nombre = nombre
         self.ruta = ruta
-        self.bastidor_vehiculo = bastidor_vehiculo
+        self.bastidor = bastidor
         self.img = img
+        self.id = id!
      
     }
     

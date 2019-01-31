@@ -10,12 +10,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyectoConcesionario/FacadeUsuario.swift"
-            timestampString = "570622781.686957"
+            timestampString = "570654799.3312809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "CreateUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyectoConcesionario/FacadeImagen.swift"
+            timestampString = "570654799.331393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "DownloadImage(bastidor:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyectoConcesionario/FacadeImagen.swift"
+            timestampString = "570654799.331467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "DownloadImage(bastidor:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyectoConcesionario/ViewController.swift"
+            timestampString = "570654799.331538"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "SacarImgen(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProyectoConcesionario.ViewController.SacarImgen(Any) -&gt; ()"
+                  moduleName = "ProyectoConcesionario"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonio/OneDrive%20-%20Universidad%20de%20Ma%CC%81laga/Modulo%20VI%20iOS/Xcode/ProyectoConcesionario/ProyectoConcesionario/ViewController.swift"
+                  timestampString = "570652238.96999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage) -&gt; () in ProyectoConcesionario.ViewController.SacarImgen(Any) -&gt; ()"
+                  moduleName = "ProyectoConcesionario"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonio/OneDrive%20-%20Universidad%20de%20Ma%CC%81laga/Modulo%20VI%20iOS/Xcode/ProyectoConcesionario/ProyectoConcesionario/ViewController.swift"
+                  timestampString = "570652238.9730099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyectoConcesionario/FacadeImagen.swift"
+            timestampString = "570654799.3319089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "DownloadImage(bastidor:handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

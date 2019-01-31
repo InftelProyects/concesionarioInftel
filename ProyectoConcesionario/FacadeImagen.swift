@@ -13,6 +13,7 @@ class FacadeImagen{
     
     let profileImage = UIImage(named:"coche1")!
     var dataImage : Any?
+
     
     func encodeData(){
         dataImage = profileImage.pngData()
@@ -23,12 +24,10 @@ class FacadeImagen{
     func UploadImage() {
         
         
-        let img = Imagen(nombre :"CitroenC3", ruta : "escritorio", bastidor_vehiculo : "1" , img : dataImage! as? Data)
-        
-        let uploadData = try! JSONEncoder().encode(img)
+        let uploadData = try! JSONEncoder().encode(imagen)
         let json = String(data: uploadData, encoding: String.Encoding.utf8)!
         //print(json)
-        let url = URL(string: "http://192.168.245.68:8080/WebServerConcesionario/recursos/imagenes")!
+        let url = URL(string: "http://192.168.224.152:8080/WebServerConcesionario/recursos/imagenes")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -55,5 +54,43 @@ class FacadeImagen{
         
     }
     
+    func DownloadImage(bastidor : String ,handler: @escaping (UIImage) -> Void){
+        
+        let url = URL(string: "http://192.168.224.152:8080/WebServerConcesionario/recursos/imagenes/\(bastidor)")!
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                    print(response)
+                    return
+            }
+            guard let dataResponse = data,
+                error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: []) as? [String: Any]
+                
+                if let encodedImageData = jsonResponse!["img"],
+                    let imageData = Data(base64Encoded: encodedImageData as! String),
+                    let image = UIImage(data: imageData) {
+                    handler(image)
+                }
+                
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+        }
+        task.resume()
+    }
+        
+        
     
 }
