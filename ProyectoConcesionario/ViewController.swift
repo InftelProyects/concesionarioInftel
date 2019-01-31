@@ -34,8 +34,8 @@ class ViewController: UIViewController  {
     
     @IBAction func subirFoto(_ sender: Any) {
         
-            self.facadeImagen.UploadImage()
-        
+            facadeImagen.encodeData()
+            facadeImagen.UploadImage()
         
     }
     

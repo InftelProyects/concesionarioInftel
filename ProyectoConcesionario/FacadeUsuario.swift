@@ -13,7 +13,7 @@ class FacadeUsuario{
     
     func ValidateUser(usuario : String, contrasena : String ,handler: @escaping (Usuario) -> Void){
         
-        let url = URL(string: "http://192.168.1.13:8080/WebServerConcesionario/recursos/usuario/sessionV/\(usuario)/\(contrasena)")!
+        let url = URL(string: "http://192.168.245.68:8080/WebServerConcesionario/recursos/usuario/sessionV/\(usuario)/\(contrasena)")!
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
@@ -52,7 +52,7 @@ class FacadeUsuario{
         let uploadData = try! JSONEncoder().encode(usu)
         let json = String(data: uploadData, encoding: String.Encoding.utf8)!
         print(json)
-        let url = URL(string: "http://192.168.1.13:8080/WebServerConcesionario/recursos/usuario")!
+        let url = URL(string: "http://192.168.245.68:8080/WebServerConcesionario/recursos/usuario")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
