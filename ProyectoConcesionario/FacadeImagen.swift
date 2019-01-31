@@ -7,17 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
-class FacadeImagenes{
+class FacadeImagen{
+    
+    let profileImage = UIImage(named:"coche1")!
+
+    
     
     func UploadImage() {
         
-        let usu = Usuario(nombre:"Francisca", apellidos: "Estancias", usuario: "paquitaSalas", constrasena: "TRES60", rol: "user")
         
-        let uploadData = try! JSONEncoder().encode(usu)
+        let img = Imagen(nombre :"CitroenC3", ruta : "escritorio", bastidorVehiculo : "w006av" , img : profileImage.pngData())
+        
+        let uploadData = try! JSONEncoder().encode(img)
         let json = String(data: uploadData, encoding: String.Encoding.utf8)!
-        print(json)
-        let url = URL(string: "http://192.168.1.13:8080/WebServerConcesionario/recursos/usuario")!
+        //print(json)
+        let url = URL(string: "http://192.168.1.13:8080/WebServerConcesionario/recursos/imagenes")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -7,20 +7,29 @@
 //
 
 import Foundation
-class Imagenes{
+import UIKit
+
+class Imagen : Encodable{
     
     let nombre : String
     let ruta : String
-    let bastidor : String
-    let id : String
+    let bastidorVehiculo : String
     let img : Data?
     
     init(_ dictionary: [String: Any]) {
         self.nombre = dictionary["nombre"] as? String ?? ""
         self.ruta = dictionary["ruta"] as? String ?? ""
-        self.bastidor = dictionary["bastidor"] as? String ?? ""
-        self.id = dictionary["id"] as? String ?? ""
-        self.img = dictionary["rol"] as? Data!
+        self.bastidorVehiculo = dictionary["bastidorVehiculo"] as? String ?? ""
+        self.img = dictionary["img"] as? Data!
+    }
+    
+    init(nombre : String, ruta :String, bastidorVehiculo : String, img : Data?) {
+        
+        self.nombre = nombre
+        self.ruta = ruta
+        self.bastidorVehiculo = bastidorVehiculo
+        self.img = img
+     
     }
     
     func describe() -> String{

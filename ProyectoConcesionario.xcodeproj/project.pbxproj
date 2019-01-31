@@ -16,8 +16,8 @@
 		A922EFF722017E250015E06B /* ProyectoConcesionarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922EFF622017E250015E06B /* ProyectoConcesionarioTests.swift */; };
 		A922F002220180560015E06B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922F001220180560015E06B /* Usuario.swift */; };
 		A922F004220186CF0015E06B /* FacadeUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922F003220186CF0015E06B /* FacadeUsuario.swift */; };
-		A9950ECE22022F6E0070085B /* Imagenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9950ECD22022F6E0070085B /* Imagenes.swift */; };
-		A9950EE3220297ED0070085B /* FacadeImagenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9950EE2220297ED0070085B /* FacadeImagenes.swift */; };
+		A9950ECE22022F6E0070085B /* Imagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9950ECD22022F6E0070085B /* Imagen.swift */; };
+		A9950EE3220297ED0070085B /* FacadeImagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9950EE2220297ED0070085B /* FacadeImagen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		A922EFF822017E250015E06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A922F001220180560015E06B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		A922F003220186CF0015E06B /* FacadeUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeUsuario.swift; sourceTree = "<group>"; };
-		A9950ECD22022F6E0070085B /* Imagenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagenes.swift; sourceTree = "<group>"; };
-		A9950EE2220297ED0070085B /* FacadeImagenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeImagenes.swift; sourceTree = "<group>"; };
+		A9950ECD22022F6E0070085B /* Imagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagen.swift; sourceTree = "<group>"; };
+		A9950EE2220297ED0070085B /* FacadeImagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeImagen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 				A922EFE022017E240015E06B /* ViewController.swift */,
 				A922EFE222017E240015E06B /* Main.storyboard */,
 				A922F001220180560015E06B /* Usuario.swift */,
-				A9950ECD22022F6E0070085B /* Imagenes.swift */,
-				A9950EE2220297ED0070085B /* FacadeImagenes.swift */,
+				A9950ECD22022F6E0070085B /* Imagen.swift */,
+				A9950EE2220297ED0070085B /* FacadeImagen.swift */,
 				A922F003220186CF0015E06B /* FacadeUsuario.swift */,
 				A922EFE822017E250015E06B /* Assets.xcassets */,
 				A922EFEA22017E250015E06B /* LaunchScreen.storyboard */,
@@ -214,10 +214,10 @@
 			files = (
 				A922F002220180560015E06B /* Usuario.swift in Sources */,
 				A922EFE722017E240015E06B /* ProyectoConcesionario.xcdatamodeld in Sources */,
-				A9950ECE22022F6E0070085B /* Imagenes.swift in Sources */,
+				A9950ECE22022F6E0070085B /* Imagen.swift in Sources */,
 				A922F004220186CF0015E06B /* FacadeUsuario.swift in Sources */,
 				A922EFE122017E240015E06B /* ViewController.swift in Sources */,
-				A9950EE3220297ED0070085B /* FacadeImagenes.swift in Sources */,
+				A9950EE3220297ED0070085B /* FacadeImagen.swift in Sources */,
 				A922EFDF22017E240015E06B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
