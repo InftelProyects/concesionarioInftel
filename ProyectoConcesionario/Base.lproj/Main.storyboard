@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mO8-C3-Rfq">
-                                <rect key="frame" x="16" y="40" width="343" height="163"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mO8-C3-Rfq">
+                                <rect key="frame" x="16" y="40" width="343" height="211.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-m7-fxz">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -28,42 +28,58 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8O-ck-oeb">
-                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="32.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Sg-YaQ">
-                                        <rect key="frame" x="0.0" y="66.5" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="74.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS9-Ob-F5g">
-                                        <rect key="frame" x="0.0" y="95" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="107" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-1V-gY4">
-                                        <rect key="frame" x="126" y="133" width="91" height="30"/>
+                                        <rect key="frame" x="126" y="149" width="91" height="30"/>
                                         <state key="normal" title="Iniciar Sesión"/>
                                         <connections>
                                             <action selector="contrasena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0K-Kg-83t"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0w-u2-Txp">
+                                        <rect key="frame" x="0.0" y="191" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="T0w-u2-Txp" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="1PX-8A-AEQ"/>
                                     <constraint firstItem="W8O-ck-oeb" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="1WQ-iR-IAE"/>
                                     <constraint firstAttribute="trailing" secondItem="BtF-m7-fxz" secondAttribute="trailing" id="2TU-AJ-WAh"/>
                                     <constraint firstAttribute="trailing" secondItem="pId-Sg-YaQ" secondAttribute="trailing" id="BJZ-bK-pWH"/>
                                     <constraint firstItem="BtF-m7-fxz" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="CCY-gm-fVN"/>
                                     <constraint firstItem="pId-Sg-YaQ" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="FJy-1E-9RS"/>
+                                    <constraint firstAttribute="trailing" secondItem="T0w-u2-Txp" secondAttribute="trailing" id="b6P-fo-zwB"/>
                                     <constraint firstAttribute="trailing" secondItem="W8O-ck-oeb" secondAttribute="trailing" id="dzj-if-M0a"/>
                                     <constraint firstAttribute="trailing" secondItem="XS9-Ob-F5g" secondAttribute="trailing" id="kOG-lg-V5k"/>
                                     <constraint firstItem="XS9-Ob-F5g" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="upA-13-p1M"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yc-bN-dFg">
+                                <rect key="frame" x="161" y="301" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="registro"/>
+                                <connections>
+                                    <action selector="botonRegistro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lE-v9-n3g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,10 +92,12 @@
                     <connections>
                         <outlet property="campoContrasena" destination="XS9-Ob-F5g" id="r9Z-CL-d3M"/>
                         <outlet property="campoUsuario" destination="W8O-ck-oeb" id="oqM-Dj-3bk"/>
+                        <outlet property="labelNameUser" destination="T0w-u2-Txp" id="j2H-xa-NLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

@@ -14,9 +14,19 @@ class ViewController: UIViewController  {
     
     @IBOutlet weak var campoUsuario: UITextField!
     @IBOutlet weak var campoContrasena: UITextField!
-    @IBAction func contrasena(_ sender: Any) {
-       facadeUsuario.startLoad()
+    @IBOutlet weak var labelNameUser: UILabel!
+    @IBAction func botonRegistro(_ sender: Any) {
+        facadeUsuario.CreateUser()
     }
+    @IBAction func contrasena(_ sender: Any) {
+        facadeUsuario.ValidateUser(usuario : campoUsuario.text!, contrasena : campoContrasena.text!) { usuario in
+            DispatchQueue.main.async {
+               self.labelNameUser.text = usuario.describe() 
+            }
+         
+        }
+    }
+    
     
     
     override func viewDidLoad() {
