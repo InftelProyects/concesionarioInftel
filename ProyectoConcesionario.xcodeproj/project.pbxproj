@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A91FEB8722038E7C005A8D9D /* FacadeVehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FEB8522038E7C005A8D9D /* FacadeVehiculo.swift */; };
 		A91FEB8822038E7C005A8D9D /* Vehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FEB8622038E7C005A8D9D /* Vehiculo.swift */; };
+		A91FEB8C22049D93005A8D9D /* Coche.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FEB8B22049D93005A8D9D /* Coche.swift */; };
 		A922EFDF22017E240015E06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922EFDE22017E240015E06B /* AppDelegate.swift */; };
 		A922EFE122017E240015E06B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922EFE022017E240015E06B /* ViewController.swift */; };
 		A922EFE422017E240015E06B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A922EFE222017E240015E06B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		A91FEB8522038E7C005A8D9D /* FacadeVehiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeVehiculo.swift; sourceTree = "<group>"; };
 		A91FEB8622038E7C005A8D9D /* Vehiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehiculo.swift; sourceTree = "<group>"; };
+		A91FEB8B22049D93005A8D9D /* Coche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coche.swift; sourceTree = "<group>"; };
 		A922EFDB22017E240015E06B /* ProyectoConcesionario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoConcesionario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A922EFDE22017E240015E06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A922EFE022017E240015E06B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				A922EFE222017E240015E06B /* Main.storyboard */,
 				A922F001220180560015E06B /* Usuario.swift */,
 				A9950ECD22022F6E0070085B /* Imagen.swift */,
+				A91FEB8B22049D93005A8D9D /* Coche.swift */,
 				A9950EE2220297ED0070085B /* FacadeImagen.swift */,
 				A91FEB8522038E7C005A8D9D /* FacadeVehiculo.swift */,
 				A91FEB8622038E7C005A8D9D /* Vehiculo.swift */,
@@ -224,6 +227,7 @@
 				A9950ECE22022F6E0070085B /* Imagen.swift in Sources */,
 				A922F004220186CF0015E06B /* FacadeUsuario.swift in Sources */,
 				A91FEB8822038E7C005A8D9D /* Vehiculo.swift in Sources */,
+				A91FEB8C22049D93005A8D9D /* Coche.swift in Sources */,
 				A922EFE122017E240015E06B /* ViewController.swift in Sources */,
 				A9950EE3220297ED0070085B /* FacadeImagen.swift in Sources */,
 				A922EFDF22017E240015E06B /* AppDelegate.swift in Sources */,

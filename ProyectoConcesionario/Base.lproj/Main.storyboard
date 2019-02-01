@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,92 +15,92 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoConcesionario" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6fS-PP-zb4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="mO8-C3-Rfq">
-                                <rect key="frame" x="16" y="40" width="382" height="874.5"/>
+                                <rect key="frame" x="16" y="40" width="992" height="758.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-m7-fxz">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="992" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8O-ck-oeb">
-                                        <rect key="frame" x="0.0" y="38.5" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="38.5" width="992" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Sg-YaQ">
-                                        <rect key="frame" x="0.0" y="86.5" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="86.5" width="992" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS9-Ob-F5g">
-                                        <rect key="frame" x="0.0" y="125" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="125" width="992" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-1V-gY4">
-                                        <rect key="frame" x="145.5" y="173" width="91" height="30"/>
+                                        <rect key="frame" x="450.5" y="173" width="91" height="30"/>
                                         <state key="normal" title="Iniciar Sesión"/>
                                         <connections>
                                             <action selector="contrasena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0K-Kg-83t"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0w-u2-Txp">
-                                        <rect key="frame" x="0.0" y="221" width="382" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="221" width="992" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXc-st-Eo0">
-                                        <rect key="frame" x="0.0" y="259.5" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="259.5" width="992" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BW-D3-dg2">
-                                        <rect key="frame" x="146.5" y="307.5" width="89" height="30"/>
+                                        <rect key="frame" x="451.5" y="307.5" width="89" height="30"/>
                                         <state key="normal" title="añadir coche"/>
                                         <connections>
                                             <action selector="AnadirCoche:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0S-HN-bo1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTF-w2-xlf">
-                                        <rect key="frame" x="127" y="355.5" width="128" height="30"/>
+                                        <rect key="frame" x="432" y="355.5" width="128" height="30"/>
                                         <state key="normal" title="Subir Foto a BBDD"/>
                                         <connections>
                                             <action selector="subirFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDW-Jn-8O1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deM-HN-yZg">
-                                        <rect key="frame" x="144" y="403.5" width="94" height="30"/>
+                                        <rect key="frame" x="449" y="403.5" width="94" height="30"/>
                                         <state key="normal" title="Sacar Imagen"/>
                                         <connections>
                                             <action selector="SacarImgen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5Y-RL-iLq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw3-jw-uPB">
-                                        <rect key="frame" x="137" y="451.5" width="108" height="30"/>
+                                        <rect key="frame" x="442" y="451.5" width="108" height="30"/>
                                         <state key="normal" title="Lista de coches"/>
                                         <connections>
                                             <action selector="Listarcoches:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vfg-Sg-ziH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yc-bN-dFg">
-                                        <rect key="frame" x="164.5" y="499.5" width="53" height="30"/>
+                                        <rect key="frame" x="469.5" y="499.5" width="53" height="30"/>
                                         <state key="normal" title="registro"/>
                                         <connections>
                                             <action selector="botonRegistro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lE-v9-n3g"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coche1" translatesAutoresizingMaskIntoConstraints="NO" id="i4h-eW-vvL">
-                                        <rect key="frame" x="0.0" y="547.5" width="382" height="327"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ejemplo1" translatesAutoresizingMaskIntoConstraints="NO" id="i4h-eW-vvL">
+                                        <rect key="frame" x="0.0" y="547.5" width="992" height="211"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Vs5-Vr-3IK" appends="YES" id="7NU-1t-WqM"/>
@@ -111,6 +111,7 @@
                                     <constraint firstItem="T0w-u2-Txp" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="1PX-8A-AEQ"/>
                                     <constraint firstItem="W8O-ck-oeb" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="1WQ-iR-IAE"/>
                                     <constraint firstAttribute="trailing" secondItem="BtF-m7-fxz" secondAttribute="trailing" id="2TU-AJ-WAh"/>
+                                    <constraint firstItem="i4h-eW-vvL" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="9wB-Hf-0om"/>
                                     <constraint firstAttribute="trailing" secondItem="pId-Sg-YaQ" secondAttribute="trailing" id="BJZ-bK-pWH"/>
                                     <constraint firstItem="BtF-m7-fxz" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="CCY-gm-fVN"/>
                                     <constraint firstItem="VXc-st-Eo0" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="ER7-uq-avx"/>
@@ -119,6 +120,7 @@
                                     <constraint firstAttribute="trailing" secondItem="T0w-u2-Txp" secondAttribute="trailing" id="b6P-fo-zwB"/>
                                     <constraint firstAttribute="trailing" secondItem="W8O-ck-oeb" secondAttribute="trailing" id="dzj-if-M0a"/>
                                     <constraint firstAttribute="trailing" secondItem="XS9-Ob-F5g" secondAttribute="trailing" id="kOG-lg-V5k"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4h-eW-vvL" secondAttribute="trailing" id="u2f-De-IbA"/>
                                     <constraint firstItem="XS9-Ob-F5g" firstAttribute="leading" secondItem="mO8-C3-Rfq" secondAttribute="leading" id="upA-13-p1M"/>
                                 </constraints>
                             </stackView>
@@ -150,6 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coche1" width="720" height="327"/>
+        <image name="ejemplo1" width="317" height="211"/>
     </resources>
 </document>

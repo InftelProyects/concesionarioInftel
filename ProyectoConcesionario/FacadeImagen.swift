@@ -51,9 +51,9 @@ class FacadeImagen{
         
     }
     
-    func DownloadImage(bastidor : String ,handler: @escaping (UIImage) -> Void){
+    func DownloadImage(handler: @escaping (UIImage) -> Void){
         
-        let url = URL(string: "http://192.168.224.152:8080/WebServerConcesionario/recursos/imagenes/\(bastidor)")!
+        let url = URL(string: "http://192.168.249.213:8080/WebServerConcesionario/recursos/imagenes")!
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
@@ -72,14 +72,28 @@ class FacadeImagen{
             do{
                 //here dataResponse received from a network request
                 let jsonResponse = try JSONSerialization.jsonObject(with:
-                    dataResponse, options: []) as? [String: Any]
+                    dataResponse, options: [])
                 
+                guard let jsonArray = jsonResponse as? [[String: Any]] else {
+                    print("Array no se pudo cargar")
+                    return
+                }
+                //print(jsonArray)
+                
+                var model = [Imagen]() //Inicializo una Array con imagenes
+                for dic in jsonArray{
+                    model.append(Imagen(dic)) // Añado a cada Imagen sus valores
+                }
+                if let imageData = Data(base64Encoded: model[2].img as! String),
+                    let image = UIImage(data: imageData) {
+                    handler(image)}
+                /*
+                 Para una sola imagen descomentar
                 if let encodedImageData = jsonResponse!["img"],
                     let imageData = Data(base64Encoded: encodedImageData as! String),
                     let image = UIImage(data: imageData) {
                     handler(image)
-                }
-                
+                }*/
                 
             } catch let parsingError {
                 print("Error", parsingError)

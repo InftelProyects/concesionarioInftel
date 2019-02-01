@@ -35,8 +35,6 @@ class Imagen : Encodable{
         
     }
     
-    
-    
     func describe() -> String{
         return "Bienvenido : \(self.nombre) "
     }

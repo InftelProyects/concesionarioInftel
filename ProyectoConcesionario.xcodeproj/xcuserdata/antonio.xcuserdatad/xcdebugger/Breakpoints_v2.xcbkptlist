@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyectoConcesionario/FacadeImagen.swift"
-            timestampString = "570718475.448373"
+            timestampString = "570728887.34812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "DownloadImage(bastidor:handler:)"
+            landmarkName = "DownloadImage(handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyectoConcesionario/FacadeImagen.swift"
-            timestampString = "570718475.448542"
+            timestampString = "570728887.348262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
-            landmarkName = "DownloadImage(bastidor:handler:)"
+            landmarkName = "DownloadImage(handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyectoConcesionario/ViewController.swift"
-            timestampString = "570718475.4486541"
+            timestampString = "570728887.348371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyectoConcesionario/FacadeImagen.swift"
-            timestampString = "570718475.448752"
+            timestampString = "570728887.348466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "DownloadImage(bastidor:handler:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "DownloadImage(handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

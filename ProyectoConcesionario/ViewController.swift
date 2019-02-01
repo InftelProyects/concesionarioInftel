@@ -88,11 +88,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func SacarImgen(_ sender: Any) {
         //facadeImagen.encodeData()
-        facadeImagen.DownloadImage(bastidor: "5701"){ img in
+        facadeImagen.DownloadImage(){img in
             DispatchQueue.main.async {
                 self.VistaImage.image = img
             }
         }
+           /* DispatchQueue.main.async {
+                self.VistaImage.image = img
+            }*/
+        
     }
     
     @IBAction func AnadirCoche(_ sender: Any) {
@@ -105,7 +109,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func Listarcoches(_ sender: Any) {
-        facadeVehiculo.DownloadCoches()
+        //facadeVehiculo.DownloadCoches()
     }
     
     override func viewDidLoad() {

@@ -42,7 +42,7 @@ class FacadeVehiculo{
         
     }
     
-    func DownloadCoches(handler: @escaping (Array) -> Void){
+    func DownloadCoches(handler: @escaping (Array<Vehiculo>) -> Void){
         
         let url = URL(string: "http://192.168.224.152:8080/WebServerConcesionario/recursos/vehiculo")!
         
